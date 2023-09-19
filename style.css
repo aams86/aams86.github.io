@@ -1,0 +1,76 @@
+css:
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#drawingArea {
+    display: grid;
+    gap: 1px;
+    /*border: 1px solid #000000;*/
+}
+
+
+.toggled {
+    background-color: black;
+}
+
+
+.gridItem {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cccccc;
+    transition: background 0.2s;
+}
+
+body {
+    -webkit-user-select: none;  /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+}
+
+.gridItem {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* This ensures they align at the top */
+    gap: 100px; /* Space between the grid and the output */
+}
+
+#outputArray {
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    cursor: text;
+}
+
+.output > div {
+    margin-left: 10px;
+}
+
+.arrayOutputContainer {
+    display: flex;
+    justify-content: space-between;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    cursor: text;
+}
+
+.outputArray {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.outputArray:first-child {
+    margin-right: 60px;  /* Adjust this value to your desired spacing */
+}
